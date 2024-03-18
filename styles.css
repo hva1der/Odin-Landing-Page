@@ -1,10 +1,25 @@
-/* GLOBAL */
+/******* GLOBAL *********/
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/********* MISC **********/
+
+/* Button */
+.blue-button {
+    background-color: #3882F6;
+    border-radius: 7px;
+    color: #F9FAF8;
+    font-weight: 600;
+    padding: 5px 25px;
+    /* ensures button doesn't expand to fit width of parent */
+    max-width: fit-content;
+    /* the below would achieve the same, but has other connotations. it is the feature used by the <button> element - does that make it better/more appropriate? */
+    /* display: inline-block; */
+}
+
 /* HEADER */
-.main-header {
+.header {
     display: flex;
     justify-content: space-between;
     background-color: #1F2937;
@@ -12,7 +27,7 @@
 }
 
 /* Header logo */
-.main-header h3 {
+.header h3 {
     font-size: 24px;
     color: #F9FAF8;
     padding-left: 15vw;
@@ -20,14 +35,43 @@
 }
 
 /* header links container */
-.main-header .links-container {
+.header .links-container {
     padding-right: 15vw;
 }
 
 /* Header links */
-.main-header a {
+.header a {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
     margin-left: 1vw;
+}
+
+/* **********  HERO  ***************/
+.hero {
+    background-color: #1F2937;
+    padding: 10vh 15vw;
+    display: flex;
+}
+
+/* container for hero text */
+.hero .text-container {
+    flex: 1;
+}
+
+.hero .image-container {
+    flex: 1;
+}
+
+/* Main text */
+.hero .main-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+/* Secondary text */
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
