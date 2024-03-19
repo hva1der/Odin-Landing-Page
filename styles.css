@@ -1,3 +1,9 @@
+/* NOTES
+- Lots of this is using parents etc (ex: .some-parent .some-child) to test using this feature
+    i.e. it's not always needed or effective/efficient
+*/
+
+
 /******* GLOBAL *********/
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -50,16 +56,12 @@
 /* **********  HERO  ***************/
 .hero {
     background-color: #1F2937;
-    padding: 10vh 15vw;
+    padding: 10vh 12vw;
     display: flex;
 }
 
 /* container for hero text */
 .hero .text-container {
-    flex: 1;
-}
-
-.hero .image-container {
     flex: 1;
 }
 
@@ -74,4 +76,14 @@
 .hero p {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+/* Image placeholder */
+.hero .image-placeholder {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(210, 207, 241, 0.5);
+    margin-left: 3vw;
 }
